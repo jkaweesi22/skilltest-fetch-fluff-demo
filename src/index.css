@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "animate.css";
+
+/*
+  Brand theme — this is the single place to restyle the whole site for a
+  new client. Swap --color-brand / --color-brand-dark / --color-accent and
+  every bg-brand / text-brand / border-accent utility below updates.
+*/
+@theme {
+  --color-brand: #d97706;
+  --color-brand-dark: #b45309;
+  --color-accent: #f59e0b;
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-display);
+  scroll-behavior: smooth;
+}
+
+/* Reveal-on-scroll: sections stay invisible until animate__animated is added */
+.reveal {
+  opacity: 0;
+}
+.reveal.animate__animated {
+  opacity: 1;
+}
